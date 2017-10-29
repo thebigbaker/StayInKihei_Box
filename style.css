@@ -26,7 +26,7 @@
   background-color: #5C79A1;
   grid-template-areas:
     "header  header header header header header "
-    "header  header header header header header "
+    /*"header  header header header header header "*/
     "kkn-condo kkn-condo kkn-condo kkn-condo guide guide"
     "kkn-condo kkn-condo kkn-condo kkn-condo guide guide"
     "kkn-condo kkn-condo kkn-condo kkn-condo guide guide"
@@ -51,20 +51,25 @@
 
 
 .header h1 {
-  font-size: 4.25em;
+  font-size: 2.25em;
   margin-top: 1em;
+  margin: 0;
   font-family: 'Niconne', cursive;
+}
 
+.header span {
+  margin-top: 0;
+  font-size: .5em;
 }
 
 .header p {
   margin-top: 0;
-  font-size: 70px;
+  font-size: 60px;
   font-family: 'Lobster', cursive;
   color: #1F487E;
   text-shadow: #ffffff 3px 3px 0px, rgba(0, 0, 0, 0.2) 6px 6px 0px;
   text-align: center;
-  padding-top: 60px;
+
 }
 
 
@@ -92,8 +97,8 @@
 }
 
 .ps-condo h2 {
-  font-size: 2em;
-  color: black;
+  font-size: 3em;
+  color: #fff;
 }
 
 
@@ -108,14 +113,6 @@
   font-size: 2em;
 }
 
-
-
-/*.footer {
-  grid-area: footer;
-  border-radius: 5px;
-  border-radius: 5px;
-  background-color: #52B2CF
-}*/
 
 .footer {
   grid-area: footer;
