@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3fr);
+    grid-auto-rows: minmax(100px, auto);
+    background-color: #5C79A1;
+    grid-template-areas:
+     "header"
+     "kkn-condo"
+     "ps-condo"
+     "guide"
+     "footer"
+  }
+
+
+@media (min-width: 500px){
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  margin: 0, auto;
+  grid-gap: 0.5em;
+  background-color: #5C79A1;
+  grid-template-areas:
+    "header  header header header header header "
+    "header  header header header header header "
+    "kkn-condo kkn-condo kkn-condo kkn-condo guide guide"
+    "kkn-condo kkn-condo kkn-condo kkn-condo guide guide"
+    "kkn-condo kkn-condo kkn-condo kkn-condo guide guide"
+    "ps-condo ps-condo ps-condo ps-condo guide guide"
+    "ps-condo ps-condo ps-condo ps-condo guide guide"
+    "ps-condo ps-condo ps-condo ps-condo guide guide"
+    "footer  footer footer footer footer footer"
+
+  }
+
+}
+
+.header {
+  grid-area: header;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-image: url(img/palm_trees_sunglow.jpg);
+  background-size: cover;
+  background-position: center;
+  /*display: flex;*/
+  text-align: center;
+  /*align-items: center;
+  justify-content: center;*/
+}
+
+
+.header h1 {
+  margin: auto;
+  font-size: 4.25em;
+  margin-top: 1em;
+  font-family: 'Niconne', cursive;
+
+}
+
+.header p {
+  margin-top: 0;
+  font-size: 80px;
+  font-family: 'Lobster', cursive;
+  color: #1F487E;
+  text-shadow: #ffffff 3px 3px 0px, rgba(0, 0, 0, 0.2) 6px 6px 0px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+
+.kkn-condo {
+  grid-area: kkn-condo;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-image: url(./img/kkn_sign.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.kkn-condo h2 {
+  font-size: 2em;
+}
+
+.ps-condo {
+  grid-area: ps-condo;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-image: url(./img/ps_living_area_1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.ps-condo h2 {
+  font-size: 2em;
+  color: black;
+}
+
+
+.guide {
+  grid-area: guide;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-image: url(img/shoes_in_sand.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-size: 2em;
+}
+
+
+
+/*.footer {
+  grid-area: footer;
+  border-radius: 5px;
+  border-radius: 5px;
+  background-color: #52B2CF
+}*/
+
+.footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #1F487E;
+  border-radius: 5px;
+  padding: 10px;
+  grid-gap: 10px;
+}
+
+.footer p {
+  font-size: .75em;
+}
+
+.footer a {
+  color: black;
+}
+
+.booking-options {
+  padding-top: 10px;
+}
+
+
+.booking-options h5 {
+  font-style: italic;
+  text-decoration: underline;
+  font-family: 'Niconne', cursive;
+  color: blacke;
+  font-size: 1em;
+}
+
+
+.booking-options p {
+  font-family: 'Catamaran', sans-serif;
+  color: black;
+}
+
+
+.locations {
+  padding-top: 10px;
+  color: black;
+}
+
+
+.locations h5 {
+  font-style: italic;
+  text-decoration: underline;
+  font-family: 'Niconne', cursive;
+  color: black;
+}
+
+
+.locations p {
+  font-family: 'Catamaran', sans-serif;
+  color: black;
+}
+
+
+.email {
+  padding-top: 10px;
+  color: black;
+}
+
+
+.email h5 {
+  font-style: italic;
+  text-decoration: underline;
+  font-family: 'Niconne', cursive;
+  color: black;
+}
+
+
+.email p {
+  font-family: 'Catamaran', sans-serif;
+  color: black;
+}
+
+
+.social-media{
+  padding-top: 10px;
+  color: black;
+}
+
+
+.social-media h5 {
+  font-style: italic;
+  text-decoration: underline;
+  font-family: 'Niconne', cursive;
+  color: black;
+}
+
+
+.tax-info {
+  padding-top: 10px;
+  color: black;
+}
+
+
+.tax-info h5 {
+  font-style: italic;
+  text-decoration: underline;
+  font-family: 'Niconne', cursive;
+  color: black;
+}
